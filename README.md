@@ -62,26 +62,26 @@ This repository contains a series of Jupyter notebooks used for analyzing 13 urb
   - **city:** Contains indicators at city level computed in `2_indicators_creation.ipynb`.
 
 ### results
-- **data:** Contains results from `3_indicators_analysis.ipynb`.
+- **data:** Contains results from `3_indicators_analysis.ipynb`and '4_main_analysis.ipynb'.
 - **indicators:** Contains all the indicators created in `2_indicators_creation.ipynb`. It contains:
    - *data1.csv:* indicators data at city level
    - *data2.csv:* indicators data at grid cell level
 - **df_rank_domain.csv:** Pivot dataset with domains as columns
-- **df_rank_rescaled.csv:** Pivot table where indicators are represented as columns, with their corresponding rescaled values.
-- **df_rank_val.csv:** Pivot table where indicators are represented as columns, with their corresponding absolute values.
+- **df_rank_rescaled_city.csv:** Pivot table where indicators are represented as columns, with their corresponding rescaled values.
+- **df_rank_val_city.csv:** Pivot table where indicators are represented as columns, with their corresponding absolute values.
 - **df_website.xlsx:** Dataset created for the HUDI website with df_rank_rescaled.csv and df_rank_val.csv merged
 - **HUDI_domains.csv:** HUDI and domains
-- **HUDI_summary.csv:** Summary of HUDI across the clusters
+- **HUDI_summary.xlsx:** Summary of HUDI across the clusters
 - **gdf_plot_qgis.shp:** Boundary of all cities associated with HUDI values 
 
 ### PLOTS
 - **data:** Contains plots for data created in `4_main_analysis.ipynb`.
 - **domains:** Contains plots regarding domains created in `4_main_analysis.ipynb`.
-- **grids:** Contains plots regarding grids created in `4_main_analysis.ipynb`.
-- **indicators:** Contains plots regarding indicators created in `4_main_analysis.ipynb`.
-- **geo:** Contains geographic plots of indicators created in `6_geo_plots.ipynb`.
-- **top_bottom:** Contains top and bottom indicators created in `4_main_analysis.ipynb`.
-- **spiderplot:** Contains spider plots created in `4_main_analysis.ipynb`.
+- **grids:** Contains plots regarding grids created in `4_main_analysis.ipynb`. 'website.zip' folder contains all the cities at the city level as visualized in the website https://isglobalranking.org/hudi/ 
+- **indicators:** Contains plots regarding indicators created in `4_main_analysis.ipynb`. It contains:
+   - **geo:** Contains geographic plots of indicators created in `6_geo_plots.ipynb`.
+   - **top_bottom:** Contains top and bottom indicators created in `4_main_analysis.ipynb`.
+- **spider:** Contains spider plots created in `4_main_analysis.ipynb`.
 
 ## Utility Scripts
 
@@ -100,9 +100,12 @@ This repository contains a series of Jupyter notebooks used for analyzing 13 urb
    ```sh
    pip install -r requirements.txt
    ```
-
-3. **Run the notebooks:**
-   Open the notebooks in Jupyter and run the cells sequentially to perform the data cleaning, indicator creation, and analysis.
+   
+3. **Download the Zenodo folder:**
+   Download the Zenodo archive, which includes the DATA/, results/, and plots/ directories.
+   
+4. **Run the notebooks:**
+   Open the notebooks in Jupyter and run the cells sequentially. If you’ve downloaded the DATA/ folder from Zenodo, you can skip the data cleaning step and start directly from '2_indicators_creation.ipynb' using the pre-cleaned data in DATA/data/.
 
 ## Installation
 
@@ -131,8 +134,8 @@ splot
 esda
 ```
 
-## Results
-The results of the analyses are saved in the `results` directory and the plots are saved in the `plots` directory.
+## Results and Plots
+The results of the analyses are saved in the `results` directory, and the plots are saved in the `plots` directory.
 
 ## Author
 Federica Montana
