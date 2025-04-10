@@ -102,7 +102,7 @@ This repository contains a series of Jupyter notebooks used for analyzing 13 urb
    ```
    
 3. **Download the Zenodo folder:**
-   Download the Zenodo archive, which includes the DATA/, results/, and plots/ directories.
+   Download the Zenodo archive (doi: 10.5281/zenodo.15187648), which includes the DATA/, results/, and plots/ directories.
    
 4. **Run the notebooks:**
    Open the notebooks in Jupyter and run the cells sequentially. If you’ve downloaded the DATA/ folder from Zenodo, you can skip the data cleaning step and start directly from '2_indicators_creation.ipynb' using the pre-cleaned data in DATA/data/.
