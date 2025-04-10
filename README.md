@@ -19,7 +19,7 @@ This repository contains a series of Jupyter notebooks used for analyzing 13 urb
 
 ### 4. Main Analysis
 - **File:** `4_main_analysis.ipynb`
-- **Description:** This notebook contains the main analysis of the indicators, included in the main text and supplementary material.
+- **Description:** This notebook contains the main analysis of the indicators, which are included in the main text and supplementary material.
 
 ### 5. Additional Analysis
 - **File:** `5_additional_analysis.ipynb`
@@ -27,7 +27,7 @@ This repository contains a series of Jupyter notebooks used for analyzing 13 urb
 
 ### 6. Geo Plots
 - **File:** `6_geo_plots.ipynb`
-- **Description:** This notebook is used to generate geographical plots for visualizing the indicators.
+- **Description:** This notebook is used to generate geographical plots to visualize the indicators.
 
 ## Directory Structure
 
@@ -35,21 +35,21 @@ This repository contains a series of Jupyter notebooks used for analyzing 13 urb
 - **data0:** Contains the original data.
 - **data:** Contains the data after cleaning in `1_data_cleaning_final.ipynb`. In particular:
    - *all_cities.shp*: boundary of all the 917 cities (containing geometry column)
-   - *london_cities.gpkg* : cities contained in the greater cities of london - this file is used only in the UHI calculation (containing geometry column)
-   - *gdf_pop.geojson* : population at 250mx250m grid resolution for each city (containing geometry column)
+   - *london_cities.gpkg*: cities contained in the greater cities of London (containing geometry column)- this file is used only in the UHI calculation 
+   - *gdf_pop.geojson*: population at 250mx250m grid resolution for each city (containing geometry column)
    - *grid_pop* : population dataset
-   - *grid_pop0* : population dataset including grids wit pop=0
-   - *df_dwellings.csv : file containing the dwelling density for all the 917 cities
-   - *df_lcz.csv* : file containing low to mid rise developments for all the 917 cities
-   - *df_imd.csv* : file containing the permeability for all the 917 cities
-   - *df_osm.csv : file containing the walkability and cyclability for all the 917 cities, this file was split into: *df_walk.csv* and *df_cycle.csv*
-   - *df_pubtrans.csv* : file containing the bus stops for all the 917 cities
-   - *df_ndvi.csv* : file containing the ndvi for all the 917 cities
-   - *df_ndvi_target_tabla.csv* : file containing the target ndvi for all the 917 cities
-   - *df_ap*: file containing the air pollution values, it is divided in *df_no2.csv* and *df_pm.csv* 
-   - *df_uhi.csv* : file containing the urban heat island values for all the 917 cities
-   - *df_300m.csv* : file containing the 300m green accessibility data for all the 917 cities
-   - *df_2km.csv* : file containing the 2km green accessibility data for all the 917 cities
+   - *grid_pop0* : population dataset including grids with pop=0
+   - *df_dwellings.csv*: file containing the dwelling density for all 917 cities
+   - *df_lcz.csv*: file containing low to mid-rise developments for all 917 cities
+   - *df_imd.csv*: file containing the permeability for all the 917 cities
+   - *df_osm.csv: file containing the walkability and cyclability data for all the 917 cities, this file was split into: *df_walk.csv* and *df_cycle.csv*
+   - *df_pubtrans.csv*: file containing the bus stops for all 917 cities
+   - *df_ndvi.csv*: file containing the NDVI for all 917 cities
+   - *df_ndvi_target_tabla.csv*: file containing the target NDVI for all the 917 cities
+   - *df_ap*: file containing the air pollution values, it is divided into *df_no2.csv* and *df_pm.csv* 
+   - *df_uhi.csv*: file containing the urban heat island values for all 917 cities
+   - *df_300m.csv*: file containing the 300m green accessibility data for all the 917 cities
+   - *df_2km.csv*: file containing the 2km green accessibility data for all 917 cities
 
 - **external_dataset:** Contains datasets used for `5_additional_analysis.ipynb`.
    - *df_green.csv*: green spaces dataset
